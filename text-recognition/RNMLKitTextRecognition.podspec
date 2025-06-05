@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.name         = "RNMLKitTextRecognition"
   s.version      = package["version"]
   s.summary      = package["description"]
-  s.homepage     = "https://github.com/a7med-mahmoud/react-native-ml-kit"
+  s.homepage     = "https://github.com/mapledan/react-native-ml-kit"
   # brief license entry:
   s.license      = "MIT"
   # optional - use expanded license entry instead:
