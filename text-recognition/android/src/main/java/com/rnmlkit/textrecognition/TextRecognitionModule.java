@@ -147,12 +147,6 @@ public class TextRecognitionModule extends ReactContextBaseJavaModule {
         switch (script) {
             case "Chinese":
                 return new ChineseTextRecognizerOptions.Builder().build();
-            case "Devanagari":
-                return new DevanagariTextRecognizerOptions.Builder().build();
-            case "Japanese":
-                return new JapaneseTextRecognizerOptions.Builder().build();
-            case "Korean":
-                return new KoreanTextRecognizerOptions.Builder().build();
             default:
                 return TextRecognizerOptions.DEFAULT_OPTIONS;
         }

@@ -97,13 +97,7 @@ RCT_EXPORT_METHOD(recognize: (nonnull NSString*)url
         options = [[MLKTextRecognizerOptions alloc] init];
     } else if ([script isEqualToString:@"Chinese"]) {
         options = [[MLKChineseTextRecognizerOptions alloc] init];
-    } else if ([script isEqualToString:@"Devanagari"]) {
-        options = [[MLKDevanagariTextRecognizerOptions alloc] init];
-    } else if ([script isEqualToString:@"Japanese"]) {
-        options = [[MLKJapaneseTextRecognizerOptions alloc] init];
-    } else if ([script isEqualToString:@"Korean"]) {
-        options = [[MLKKoreanTextRecognizerOptions alloc] init];
-    } else {
+    {
         return reject(@"Text Recognition", @"Unsupported script", nil);
     }
     
